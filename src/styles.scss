@@ -1,1 +1,473 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    color: #efefef;
+    background: #F6F7FB;
+
+}
+
+body > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+p,  a {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.35fr 5fr 1fr;
+    grid-template-rows: 8vh 8vh 10vh auto 10vh;
+    grid-template-areas: 
+    "header header header "
+    "section1 section1 section1"
+    "section2 section3 section4"
+    "section2 section5 section4"
+    "section2 section6 section4";
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #6a8aa7;
+    grid-area: header;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.ji-c {
+    justify-items: center;
+}
+
+
+.info-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.ac-c {
+	align-content: center;
+}
+
+.icon-nav {
+    width: 24px;
+    height: 24px;
+    background: #d5e6f5;
+    margin: 0 25px;
+    border-radius: .5em;
+    
+}
+
+.logo {
+    width: 180px;
+    height: 21px;
+    background: #d5e6f5;
+    margin: 25px;
+    border-radius: .5em;
+
+}
+
+
+.icon-user1 {
+    width: 21px;
+    height: 21px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin: 0 45px;
+    max-width: 100%;
+    
+}
+
+
+.icon-user2 {
+    width: 21px;
+    height: 21px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin: 0 45px;
+    max-width: 100%;
+    
+}
+
+.icon-user3 {
+    width: 21px;
+    height: 21px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin: 0 45px;
+    max-width: 100%;
+
+}
+
+
+.icon-user1::before {
+    content: "  ";
+    position: relative;
+    background: #d5e6f5 ;
+    padding: 8px 2px;
+    border-radius: 5px;
+    margin-left: 55px;
+}
+.icon-user2::before {
+    content: "  ";
+    position: relative;
+    background: #d5e6f5 ;
+    padding: 8px 2px;
+    border-radius: 5px;
+    margin-left: 55px;
+}
+
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #adc6dc;
+    grid-area: section1;
+    
+}
+
+.info-sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 180px;
+    height: 10px;
+    margin: 0 45px;
+    background: #d5e6f5;
+    border-radius: .5em;
+
+}
+
+.actions {
+    display: flex;
+    flex: 1 1 400px;
+    max-width: 400px;
+}
+
+.action-info1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+
+}
+
+
+.info-icon1 {
+    width: 21px;
+    height: 21px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    
+}
+
+
+.info-text1 {
+    height: 6px;
+    width: 95px;
+    background: #d5e6f5;
+    border-radius: .5em;
+    margin-top: 10px;
+
+}
+
+
+.section2 {
+    background: #6a8aa7;
+    grid-area: section2;
+    margin: 5px;
+    padding: 1rem;
+    
+}
+
+.info-nav {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.info-icon2 {
+  width: 21px;
+  height: 21px;
+  background: #d5e6f5;
+  border-radius: 50%;
+
+}
+
+.info-text2 {
+  width: 145px;
+  height: 6px;
+  background: #d5e6f5;
+  border-radius: .5rem;
+
+}
+
+
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #adc6dc;
+    grid-area: section3;
+    border-radius: .5em .5em 0 0;
+    margin: 5px;
+    padding: 1rem;
+        
+}
+
+.info-icon3 {
+    width: 18px;
+    height: 18px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin-right: 25px;
+    
+}
+
+.info-text3 {
+    width: 140px;
+    height: 6px;
+    background: #d5e6f5;
+    border-radius: .5rem;
+  
+}
+
+.info-icon2 {
+    width: 20px;
+    height: 20px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin-right: 25px;
+    
+}
+
+
+.section4 {
+
+    background: #6a8aa7;
+    grid-area: section4;
+    margin: 5px;
+    padding: 1rem;
+        
+}
+
+.info-icon4 {
+    width: 21px;
+    height: 21px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin-right: 25px;
+
+}
+
+.info-text4 {
+    width: 120px;
+    height: 6px;
+    background: #d5e6f5;
+    border-radius: .5rem;
+  }
+
+
+.info-text4-info {
+    width: 120px;
+    height: 6px;
+    background: #d5e6f5;
+    border-radius: .5rem;
+    margin: 30px 45px;
+
+
+}
+
+
+.section5 {
+    background: #adc6dc;
+    grid-area: section5;
+    margin: 5px;
+    padding: 1rem;
+        
+}
+
+.info-icon5 {
+    width: 18px;
+    height: 18px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.info-text5 {
+    width: 140px;
+    height: 6px;
+    background: #d5e6f5;
+    border-radius: .5rem;
+    margin-left: 25px;
+
+}
+
+.info-sec5 {
+    width: 310px;
+    height: 300px;
+    background: #d5e6f5;
+    margin: 10px auto;
+    border-radius: 15px;
+
+}
+
+
+.grid-template-sec5 {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 15px;
+}
+
+
+
+.section6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #adc6dc;
+    grid-area: section6;
+    border-radius: 0 0 .5em .5em;
+    margin: 5px;
+    padding: 1rem;
+
+}
+
+.info-icon6 {
+    width: 18px;
+    height: 18px;
+    background: #d5e6f5;
+    border-radius: 50%;
+    margin-right: 25px;
+
+}
+
+.info-text6 {
+    width: 140px;
+    height: 6px;
+    background: #d5e6f5;
+    border-radius: .5rem;
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    .flex {
+        display: flex;
+    }
+
+    .icon-user1, .icon-user2, .icon-user3 {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    
+    .section1 {
+        width: 100%;
+    }
+    
+    .section2 {
+        display: none;
+    }
+
+    .section3 {
+        display: none;
+    }
+
+    .section4 {
+        display: none;
+    }
+
+    .section5 {
+        width: 100%;
+        margin: 5px auto;
+        
+    }
+
+    .grid-template-sec5 {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(auto-fit);
+    }
+    
+    
+    .info-sec5 {
+        width: 290px;
+        height: 240px;
+        background: #d5e6f5;
+        margin: 30px auto;
+    
+    }
+    
+
+    .section6 {
+        width: 100%;
+    }
+
+    .actions {
+        display: none;
+        margin: 0 auto;
+    }
+
+    
+    .container {
+        display: grid;
+        grid-template-columns: 100%;    
+        grid-template-rows: 10vh 10vh auto 10vh;
+        grid-template-areas: 
+        "header "
+        "section1  "
+        "section5  "
+        "section6";
+        
+    }
+
+
+}
+
